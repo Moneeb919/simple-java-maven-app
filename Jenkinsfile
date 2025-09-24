@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools{
+        mavan 'Default'
+    }
     stages {
         stage('Build') { 
             steps {
